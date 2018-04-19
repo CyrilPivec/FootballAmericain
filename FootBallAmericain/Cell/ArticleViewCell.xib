@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="ArticleViewCell" customModule="FootBallAmericain" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wp5-wU-haw" customClass="CardView" customModule="FootBallAmericain" customModuleProvider="target">
+                        <rect key="frame" x="5" y="2" width="310" height="92.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tH7-VI-e6u">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZJQ-qd-tWk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNM-BI-d2v">
+                                <rect key="frame" x="108" y="8" width="194" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <color key="textColor" red="0.85490196080000003" green="0.12941176469999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFq-ux-0gj">
+                                <rect key="frame" x="108" y="39" width="194" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tH7-VI-e6u" firstAttribute="leading" secondItem="wp5-wU-haw" secondAttribute="leading" id="0st-Js-FAf"/>
+                            <constraint firstItem="tH7-VI-e6u" firstAttribute="top" secondItem="wp5-wU-haw" secondAttribute="top" id="YgR-0K-hWm"/>
+                            <constraint firstItem="JFq-ux-0gj" firstAttribute="leading" secondItem="tH7-VI-e6u" secondAttribute="trailing" constant="8" id="b7V-Al-jT2"/>
+                            <constraint firstItem="GNM-BI-d2v" firstAttribute="leading" secondItem="tH7-VI-e6u" secondAttribute="trailing" constant="8" id="dQk-6a-bV2"/>
+                            <constraint firstAttribute="trailing" secondItem="GNM-BI-d2v" secondAttribute="trailing" constant="8" id="hKD-f4-PNx"/>
+                            <constraint firstItem="JFq-ux-0gj" firstAttribute="top" secondItem="GNM-BI-d2v" secondAttribute="bottom" constant="8" id="jGQ-Yz-CwJ"/>
+                            <constraint firstAttribute="bottom" secondItem="tH7-VI-e6u" secondAttribute="bottom" id="kxZ-Gl-G0L"/>
+                            <constraint firstAttribute="trailing" secondItem="JFq-ux-0gj" secondAttribute="trailing" constant="8" id="v3F-VD-nIu"/>
+                            <constraint firstItem="GNM-BI-d2v" firstAttribute="top" secondItem="wp5-wU-haw" secondAttribute="top" constant="8" id="vZj-CN-BlH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wp5-wU-haw" secondAttribute="bottom" constant="10" id="657-zU-IPY"/>
+                    <constraint firstItem="wp5-wU-haw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="aNm-lY-3m5"/>
+                    <constraint firstAttribute="trailing" secondItem="wp5-wU-haw" secondAttribute="trailing" constant="5" id="yxh-uG-jKo"/>
+                    <constraint firstItem="wp5-wU-haw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="z91-GM-Khs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="_desc" destination="JFq-ux-0gj" id="x6j-KK-X6G"/>
+                <outlet property="_image" destination="tH7-VI-e6u" id="EYq-Gi-GF0"/>
+                <outlet property="_title" destination="GNM-BI-d2v" id="J23-Kf-tpO"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="84.5"/>
+        </tableViewCell>
+    </objects>
+</document>
